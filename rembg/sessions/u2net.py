@@ -1,4 +1,4 @@
-import os
+progressbarimport os
 from typing import List
 
 import numpy as np
@@ -68,7 +68,6 @@ class U2netSession(BaseSession):
             ),
             fname=fname,
             path=cls.u2net_home(*args, **kwargs),
-            progressbar=True,
         )
 
         return os.path.join(cls.u2net_home(*args, **kwargs), fname)
